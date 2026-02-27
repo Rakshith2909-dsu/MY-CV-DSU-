@@ -114,49 +114,15 @@ img { max-width: 100%; }
 
 /* photo */
 .photo-wrapper {
-  position: relative; flex-shrink: 0;
+  flex-shrink: 0;
   width: 220px; height: 220px; border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(255,255,255,0.25), 0 0 0 8px var(--accent), var(--shadow-lg);
-  overflow: visible;
+  overflow: hidden;
 }
-.photo-wrapper img,
-.photo-placeholder {
+.photo-wrapper img {
   width: 220px; height: 220px; border-radius: 50%;
   object-fit: cover; display: block;
 }
-.photo-placeholder {
-  display: none;
-  flex-direction: column; align-items: center; justify-content: center;
-  background: rgba(255,255,255,0.06); border: 2px dashed rgba(255,255,255,0.35);
-  text-align: center; color: rgba(255,255,255,0.55); gap: .6rem;
-  font-size: .8rem;
-}
-.photo-placeholder i { font-size: 2.5rem; color: rgba(255,255,255,0.6); }
-.upload-btn {
-  position: absolute; bottom: 8px; right: 8px;
-  width: 40px; height: 40px; border-radius: 50%;
-  background: var(--accent); color: #fff;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; font-size: 1rem; transition: transform var(--transition), background var(--transition);
-  box-shadow: var(--shadow);
-}
-.upload-btn:hover { transform: scale(1.15); background: var(--accent2); }
-
-/* photo hover edit overlay */
-.photo-wrapper::after {
-  content: '\f030  Change Photo';
-  font-family: 'Font Awesome 6 Free', sans-serif;
-  font-weight: 900;
-  position: absolute; inset: 0; border-radius: 50%;
-  background: rgba(13,27,62,0.65);
-  color: #fff; font-size: .8rem; letter-spacing: .5px;
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; transition: opacity .25s ease;
-  cursor: pointer; pointer-events: none;
-  white-space: nowrap;
-}
-.photo-wrapper:hover::after { opacity: 1; }
-.photo-wrapper { cursor: pointer; }
 
 /* text */
 .hero-text { max-width: 560px; }
@@ -580,7 +546,7 @@ footer strong { color: #fff; }
   .hero-content { text-align: center; gap: 2.5rem; }
   .hero-btns { justify-content: center; }
   .photo-wrapper { width: 160px; height: 160px; }
-  .photo-wrapper img, .photo-placeholder { width: 160px; height: 160px; }
+  .photo-wrapper, .photo-wrapper img { width: 160px; height: 160px; }
   .timeline::before { left: 14px; }
   .timeline-dot { width: 30px; height: 30px; }
   .exp-top { flex-direction: column; }

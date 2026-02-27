@@ -123,54 +123,6 @@ function handleFormSubmit(e) {
 }
 
 /* ─────────────────────────────────────────
-   PHOTO UPLOAD  (persists via localStorage)
-───────────────────────────────────────── */
-const photoInput  = qs('#photo-upload');
-const profileImg  = qs('#profile-photo');
-const placeholder = qs('#photo-placeholder');
-const photoWrapper = qs('#photo-wrapper');
-
-// Restore saved photo on every page load
-(function restorePhoto() {
-  const saved = localStorage.getItem('profile-photo-data');
-  if (saved) {
-    profileImg.src = saved;
-    profileImg.style.display = 'block';
-    placeholder.style.display = 'none';
-  }
-})();
-
-// Clicking anywhere on the photo wrapper opens the file picker
-photoWrapper.addEventListener('click', function (e) {
-  // Don't double-trigger if the label itself was clicked
-  if (e.target.closest('label')) return;
-  photoInput.click();
-});
-
-photoInput.addEventListener('change', function () {
-  const file = this.files[0];
-  if (!file) return;
-  if (!file.type.startsWith('image/')) {
-    alert('Please select a valid image file (JPG, PNG, WEBP, etc.)');
-    return;
-  }
-  const reader = new FileReader();
-  reader.onload = e => {
-    const dataURL = e.target.result;
-    profileImg.src = dataURL;
-    profileImg.style.display = 'block';
-    placeholder.style.display = 'none';
-    // Persist so it survives page refresh
-    try {
-      localStorage.setItem('profile-photo-data', dataURL);
-    } catch (err) {
-      // Storage quota exceeded — skip silently
-    }
-  };
-  reader.readAsDataURL(file);
-});
-
-/* ─────────────────────────────────────────
    TYPING EFFECT – hero tagline
 ───────────────────────────────────────── */
 (function typingEffect() {
