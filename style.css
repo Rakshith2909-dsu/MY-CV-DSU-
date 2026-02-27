@@ -142,6 +142,22 @@ img { max-width: 100%; }
 }
 .upload-btn:hover { transform: scale(1.15); background: var(--accent2); }
 
+/* photo hover edit overlay */
+.photo-wrapper::after {
+  content: '\f030  Change Photo';
+  font-family: 'Font Awesome 6 Free', sans-serif;
+  font-weight: 900;
+  position: absolute; inset: 0; border-radius: 50%;
+  background: rgba(13,27,62,0.65);
+  color: #fff; font-size: .8rem; letter-spacing: .5px;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity .25s ease;
+  cursor: pointer; pointer-events: none;
+  white-space: nowrap;
+}
+.photo-wrapper:hover::after { opacity: 1; }
+.photo-wrapper { cursor: pointer; }
+
 /* text */
 .hero-text { max-width: 560px; }
 .hero-subtitle {
