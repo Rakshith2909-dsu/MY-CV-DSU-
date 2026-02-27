@@ -128,7 +128,7 @@ function handleFormSubmit(e) {
 (function typingEffect() {
   const el  = qs('.hero-tagline');
   if (!el) return;
-  const words = ['B.Tech CSE', 'DSA Expert', 'Java & C', 'Web Developer', 'Problem Solver'];
+  const words = ['B.Tech CSE', 'DSA Expert', 'Java & C', 'Full Stack Dev', 'Web Developer', 'Problem Solver'];
   const static_part = ' · ';
   let wi = 0, ci = 0, deleting = false;
 
