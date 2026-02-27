@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakshith Kondeti Pushparaj – CV</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Rakshith Kondeti Pushparaj</span>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="photo-wrapper" id="photo-wrapper">
+        <img src="profile pic.jpeg" alt="Rakshith Kondeti Pushparaj" id="profile-photo" onerror="this.style.display='none';document.getElementById('photo-placeholder').style.display='flex';" />
+        <div class="photo-placeholder" id="photo-placeholder">
+          <i class="fa-solid fa-user"></i>
+          <span>Add photo.jpg<br>to this folder</span>
+        </div>
+        <label class="upload-btn" for="photo-upload" title="Upload your photo">
+          <i class="fa-solid fa-camera"></i>
+        </label>
+        <input type="file" id="photo-upload" accept="image/*" style="display:none;" />
+      </div>
+      <div class="hero-text">
+        <p class="hero-subtitle reveal">Software Development Engineer</p>
+        <h1 class="hero-name reveal">Rakshith Kondeti<br><span>Pushparaj</span></h1>
+        <p class="hero-tagline reveal">B.Tech CSE · DSA · Java · C · OOPs · DBMS</p>
+        <div class="hero-btns reveal">
+          <a href="#about" class="btn btn-primary">View Portfolio</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT / SUMMARY ─── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Professional Summary</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-card">
+          <i class="fa-solid fa-code card-icon"></i>
+          <p>Aspiring <strong>Software Development Engineer</strong> with a B.Tech in Computer Science. Strong expertise in <strong>Data Structures and Algorithms (DSA)</strong> with <strong>100+ problems solved</strong> on LeetCode.</p>
+        </div>
+        <div class="about-card">
+          <i class="fa-brands fa-java card-icon"></i>
+          <p>Proficient in <strong>Java</strong> and <strong>C</strong>, with a solid grasp of <strong>Object-Oriented Programming (OOPs)</strong> and <strong>Database Management</strong>.</p>
+        </div>
+        <div class="about-card">
+          <i class="fa-solid fa-laptop-code card-icon"></i>
+          <p>Passionate about writing <strong>clean, efficient, and testable code</strong>. Actively involved in hackathons, internships, and continuous self-improvement.</p>
+        </div>
+      </div>
+      <div class="stats-row reveal">
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span>+</span><p>LeetCode Problems</p></div>
+        <div class="stat"><span class="stat-num" data-target="3">0</span><p>Internships</p></div>
+        <div class="stat"><span class="stat-num" data-target="5">0</span><p>Certifications</p></div>
+        <div class="stat"><span class="stat-num" data-target="2">0</span><p>Hackathons</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Education</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023 – 2027</span>
+            <h3>Bachelor of Technology</h3>
+            <h4>Computer Science &amp; Engineering</h4>
+            <p class="inst"><i class="fa-solid fa-university"></i> Dayananda Sagar University, Bengaluru</p>
+            <p class="cgpa"><i class="fa-solid fa-star"></i> CGPA: <strong>7.53</strong></p>
+            <div class="course-tags">
+              <span>Data Structures &amp; Algorithms</span>
+              <span>DBMS</span>
+              <span>Operating Systems</span>
+              <span>Computer Networks</span>
+              <span>OOPs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023</span>
+            <h3>Class XII – CBSE</h3>
+            <p class="inst"><i class="fa-solid fa-school"></i> Sri Chaitanya Techno PU College</p>
+            <p class="cgpa"><i class="fa-solid fa-percent"></i> Percentage: <strong>70%</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2021</span>
+            <h3>Class X – CBSE</h3>
+            <p class="inst"><i class="fa-solid fa-school"></i> NAFL – National Public School North</p>
+            <p class="cgpa"><i class="fa-solid fa-percent"></i> Percentage: <strong>70%</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Work Experience</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <div>
+            <div class="exp-title-row">
+              <h3>Website Development Intern</h3>
+              <span class="badge-offline"><i class="fa-solid fa-building"></i> Offline Internship</span>
+            </div>
+            <h4>Ganora Holistic Hub, Bengaluru</h4>
+          </div>
+          <span class="exp-date">1 Jan 2026 – 31 Jan 2026</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Developed and supported the organisation's official website, contributing to its design, structure, and functionality.</li>
+          <li>Assisted in setting up digital infrastructure and improving the organisation's online presence.</li>
+          <li>Utilised <strong>HTML, CSS, JavaScript</strong>, full-stack development concepts, <strong>API Integration</strong>, and web tools.</li>
+        </ul>
+        <div class="tech-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API Integration</span><span>Full-Stack</span>
+        </div>
+        <button class="cert-img-btn" onclick="openCert('ganora-cert.jpeg','Ganora Holistic Hub – Website Development Internship')" style="margin-top:1.2rem;">
+          <i class="fa-solid fa-image"></i> View Certificate 1
+        </button>
+        <button class="cert-img-btn" onclick="openCert('ganora-cert2.jpeg','Ganora Holistic Hub – Certificate 2')" style="margin-top:.6rem;">
+          <i class="fa-solid fa-image"></i> View Certificate 2
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Skills &amp; Abilities</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Technical Skills -->
+        <div class="skills-block reveal">
+          <h3><i class="fa-solid fa-terminal"></i> Technical Skills</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>Java</span><span>85%</span></div>
+            <div class="bar"><div class="fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>C</span><span>80%</span></div>
+            <div class="bar"><div class="fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>Data Structures &amp; Algorithms</span><span>82%</span></div>
+            <div class="bar"><div class="fill" data-w="82"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>HTML / CSS / JavaScript</span><span>78%</span></div>
+            <div class="bar"><div class="fill" data-w="78"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-label"><span>OOPs &amp; DBMS</span><span>80%</span></div>
+            <div class="bar"><div class="fill" data-w="80"></div></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-block reveal">
+          <h3><i class="fa-solid fa-people-group"></i> Management</h3>
+          <ul class="soft-list">
+            <li><i class="fa-solid fa-check-circle"></i> Strong team management &amp; task delegation</li>
+            <li><i class="fa-solid fa-check-circle"></i> Coordinating team activities for smooth collaboration</li>
+            <li><i class="fa-solid fa-check-circle"></i> Guiding members, tracking progress &amp; meeting deadlines</li>
+          </ul>
+
+          <h3 style="margin-top:2rem"><i class="fa-solid fa-comments"></i> Communication</h3>
+          <ul class="soft-list">
+            <li><i class="fa-solid fa-check-circle"></i> Excellent verbal &amp; presentation skills</li>
+            <li><i class="fa-solid fa-check-circle"></i> Clear communication in team discussions &amp; reviews</li>
+            <li><i class="fa-solid fa-check-circle"></i> Confident with diverse audiences</li>
+          </ul>
+
+          <h3 style="margin-top:2rem"><i class="fa-solid fa-crown"></i> Leadership</h3>
+          <ul class="soft-list">
+            <li><i class="fa-solid fa-check-circle"></i> Led team at Aurigo Infracode – Synergy '25 (IIIT Bangalore)</li>
+            <li><i class="fa-solid fa-check-circle"></i> Task delegation &amp; decision-making under tight deadlines</li>
+            <li><i class="fa-solid fa-check-circle"></i> Motivated members for effective hackathon collaboration</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Certifications &amp; Achievements</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">PLASMID (MSME, Govt. of India)</span>
+            <h3>Java Development Intern</h3>
+            <p>Worked on core Java programming and application development.</p>
+            <button class="cert-img-btn" onclick="openCert('Java Dev Intern – Plasmid certificate.jpeg','Java Development Intern – Plasmid')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">INTRAINZ</span>
+            <h3>Artificial Intelligence Intern</h3>
+            <p>Gained practical exposure to AI fundamentals and real-world use cases.</p>
+            <button class="cert-img-btn" onclick="openCert('AI Intern – Intrainz certificate.jpeg','AI Intern – Intrainz')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">NASA International Space Apps Challenge 2024</span>
+            <h3>Galactic Problem Solver</h3>
+            <p>Participated in a global hackathon and awarded "Galactic Problem Solver".</p>
+            <button class="cert-img-btn" onclick="openCert('NASA Space Apps.jpeg','NASA Space Apps – Galactic Problem Solver')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">Aurigo Infracode – Synergy '25 (IIIT Bangalore)</span>
+            <h3>National-Level Hackathon</h3>
+            <p>Participated in a national-level hackathon; problem-solving, ideation &amp; team collaboration.</p>
+            <button class="cert-img-btn" onclick="openCert('Aurigo Infracode certificate.jpeg','Aurigo Infracode – Synergy 25')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">RapidMiner (Altair) – Professional</span>
+            <h3>Machine Learning &amp; Data Science</h3>
+            <p>Certified in Intro to ML, CRISP-DM, ML Use Cases, Visualization &amp; data-driven problem solving.</p>
+            <button class="cert-img-btn" onclick="openCert('RapidMiner certificate.jpeg','RapidMiner ML & Data Science')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">Teachnook × Cognizance '24, IIT Roorkee</span>
+            <h3>Web Development</h3>
+            <p>Learned web development fundamentals through hands-on projects.</p>
+            <button class="cert-img-btn" onclick="openCert('Web Dev – Teachnook × IIT Roorkee.jpeg','Web Development – Teachnook × IIT Roorkee')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="cert-body">
+            <span class="cert-org">NPTEL – IIT Bombay</span>
+            <h3>Business Fundamentals for Entrepreneurs</h3>
+            <p>Elite certification with <strong>90% overall score</strong>.</p>
+            <button class="cert-img-btn" onclick="openCert('NPTEL – IIT Bombay certificate.jpeg','NPTEL Business Fundamentals – Elite')">
+              <i class="fa-solid fa-image"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <div>
+              <h4>Address</h4>
+              <p>#443/23, 37th Cross, 2nd Block<br>Rajajinagar, Bengaluru – 560010</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:9686770033">+91 9686770033</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:rakshithkp2004@gmail.com">rakshithkp2004@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <div>
+              <h4>LeetCode</h4>
+              <p>100+ Problems Solved</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-msg" id="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATE LIGHTBOX ─── -->
+  <div id="cert-modal" onclick="closeCert(event)">
+    <div class="cert-modal-box">
+      <button class="cert-modal-close" onclick="closeCert()"><i class="fa-solid fa-xmark"></i></button>
+      <p id="cert-modal-title"></p>
+      <img id="cert-modal-img" src="" alt="Certificate" />
+      <p id="cert-modal-missing">Certificate image not found.<br>Place <strong id="cert-modal-filename"></strong> in the CV folder.</p>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>© 2026 <strong>Rakshith Kondeti Pushparaj</strong>. All rights reserved.</p>
+    <p class="footer-note">Designed &amp; developed with passion.</p>
+  </footer>
+
+  <!-- ─── BACK-TO-TOP ─── -->
+  <button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
